@@ -549,12 +549,12 @@ int main( int argc, char *argv[] ) {
       score=0;
       printf("\nTest removeNode...\n");
       all_correct &=erase_test1()&&
-      (score+=5)&& (test_id!=3 || success()) &&
+      (score+=3)&& (test_id!=3 || success()) &&
       erase_test2()&&
-      (score+=5)&& (test_id!=4 || success()) &&
+      (score+=3)&& (test_id!=4 || success()) &&
       erase_test3()&&
-      (score+=5)&& (test_id!=5 || success());
-      printf("   partial_score: %d/15\n", score); 
+      (score+=4)&& (test_id!=5 || success());
+      printf("   partial_score: %d/10\n", score); 
       total_score+=score;   
     }
 
@@ -574,12 +574,12 @@ int main( int argc, char *argv[] ) {
       score=0;
       printf("\nTest nextTreeMap...\n");
       all_correct &=next_test1()&& 
-      (score+=5) && (test_id!=7 || success()) &&
+      (score+=3) && (test_id!=7 || success()) &&
       next_test2()&&
-      (score+=5) && (test_id!=8 || success()) &&
+      (score+=3) && (test_id!=8 || success()) &&
       next_test3()&&
-      (score+=5) && (test_id!=9 || success());
-      printf("   partial_score: %d/15\n", score);  
+      (score+=4) && (test_id!=9 || success());
+      printf("   partial_score: %d/10\n", score);  
       total_score+=score;
     }
 
@@ -598,7 +598,7 @@ int main( int argc, char *argv[] ) {
     }
 
     if(argc==1)
-      printf("\ntotal_score: %d/70\n", total_score);
+      printf("\ntotal_score: %d/60\n", total_score);
 
     
 
